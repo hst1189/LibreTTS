@@ -1,5 +1,8 @@
 body {
     background-color: #f0f4f8;
+    background-image: url("/image/home-bg.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 
 .card {
