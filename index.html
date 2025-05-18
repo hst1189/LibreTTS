@@ -87,6 +87,18 @@
     </script>
 
     <div class="text-center py-3 mt-3" style="background-color: #f8f9fa; font-size: 2rem;">小饅頭のTTS</div>
+    <textarea>Edge API 路径
+/api/tts - 文本转语音 API
+
+支持 GET/POST 方法
+GET 示例: /api/tts?t=你好世界&v=zh-CN-XiaoxiaoNeural&r=0&p=0
+POST 示例: 请求体为JSON格式 {"text": "你好世界", "voice": "zh-CN-XiaoxiaoNeural", "rate": 0, "pitch": 0}
+/api/voices - 获取可用语音列表 API
+
+仅支持 GET 方法
+示例: /api/voices?l=zh&f=1 (l参数用于筛选语言，f参数指定返回格式)
+例如：https://libretts.is-an.org/api/tts</textarea>
+    
     <div class="container-fluid d-flex flex-column justify-content-center align-items-center mt-5" style="min-height: 90vh;">
         <div class="row w-100 justify-content-center g-4">
             <!-- 左侧 -->
